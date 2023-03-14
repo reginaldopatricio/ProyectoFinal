@@ -2,3 +2,6 @@
 /* @BANNER */
 /* ********* */
 
+body{
+    background-color: map-get($Colores, BannerDominante );
+}
