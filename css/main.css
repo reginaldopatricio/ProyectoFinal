@@ -515,6 +515,38 @@ Header a {
 /* @FOOTER */
 /* ********* */
 /* ********* */
+/* @HMAIN */
+/* ********* */
+Main .Main-texto {
+  background-color: #D9D9D9;
+  margin-top: 13px;
+  padding-top: 10px;
+}
+Main .Main-talento {
+  text-align: center;
+}
+Main .Main-linea {
+  height: 3px;
+  width: 45px;
+  background-color: black;
+  border: none;
+}
+Main .Main-parrafo {
+  text-align: justify;
+  padding: 0 30px 20px 30px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+Main .Main-imagen {
+  background: url("/assets/img/smartphone/Cesar@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 327px;
+  width: 360px;
+}
+
+/* ********* */
 /* @FORMS */
 /* ********* */
 /* ********* */

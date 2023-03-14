@@ -1,0 +1,38 @@
+/* ********* */
+/* @HMAIN */
+/* ********* */
+Main{
+    
+    .Main-texto{
+        background-color: map-get($Colores, baseEcuatoguineano);
+        margin-top: map-get($medidas, margin-Main);
+        padding-top: map-get($medidas, padding-top)
+    }
+    .Main-talento{
+        text-align: center;
+
+    }
+    .Main-linea{
+        height: map-get($medidas, heightLinea);
+        width: map-get($medidas, widthLinea);
+        background-color: map-get($Colores, LetraNegra);
+        border: none;
+    }
+
+    .Main-parrafo{
+        text-align: justify;
+        padding: map-get($medidas, paddingParafo);
+        font-size: map-get($medidas, letraParafo);
+        margin-bottom: 0;
+    }
+
+    .Main-imagen {
+        background: url("/assets/img/smartphone/Cesar@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:  map-get($medidas, height-foto);
+        width: map-get($medidas, width-foto);
+
+    }
+}
