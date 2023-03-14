@@ -332,35 +332,6 @@ template {
 /* ********* */
 /* @BANNER */
 /* ********* */
-body {
-  background: #A80499;
-  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.imagen {
-  background: url(/public/assets/img/svg/icono.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 100px 0 208px 0;
-  width: 300px;
-  height: 300px;
-}
-
 /* ********* */
 /* @BANNER */
 /* ********* */
