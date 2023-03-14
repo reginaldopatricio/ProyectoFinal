@@ -2,118 +2,133 @@
 /* @HEADER */
 /* ********* */
 
-.Header-Navbar{
-    display: flex;
-    background:#A80499;
-    background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
-    width: map-get($medidas ,widthgeneral );
-    align-items: center;
-    justify-content: space-around;
+Header {
+    font-family: 'America';
 
-    //DESKTOP
-    @media only screen and (min-width:1200px){
+    .Header-Navbar {
         display: flex;
+        background: #A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+        width: map-get($medidas , widthgeneral);
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+
+        //DESKTOP
+        @media only screen and (min-width:1200px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
     }
 
-    .Header-Logo{
+    .Header-Logo {
+        color: map-get($Colores, letraLogo);
+
         //DESKTOP
-        @media only screen and (min-width:1200px){
-            margin-left: map-get($medidas ,logo-margin-left);
-            
-    
+        @media only screen and (min-width:1200px) {
+            margin-left: map-get($medidas , logo-margin-left);
+
         }
     }
 
-    .Header-despliega{
+    .Header-despliega {
         display: none;
     }
 
-    .Header-desplegable{
+    .Header-desplegable {
         display: none;
         list-style: none;
         position: absolute;
         right: 0px;
-        top: map-get($medidas ,movil-Top );
-        width: map-get($medidas ,widthDesplegables );
-        height: map-get($medidas ,heightDesplegables );
-        gap: map-get($medidas ,HeaderGap);
-        @media only screen and (min-width:1200px){
+        top: map-get($medidas , movil-Top);
+        width: map-get($medidas , widthDesplegables);
+        height: map-get($medidas , heightDesplegables);
+        gap: map-get($medidas , HeaderGap);
+
+        @media only screen and (min-width:1200px) {
             display: flex;
             justify-content: center;
-            top: map-get($medidas ,desktop-Top );
-            right: map-get($medidas ,desktop-rigth );
+            top: map-get($medidas , desktop-Top);
+            right: map-get($medidas , desktop-rigth);
+            color: map-get($Colores , baseEcuatoguineano);
         }
     }
 
-    .Logos{
+    .Logos {
         display: flex;
-        gap: map-get($medidas ,HeaderGap);
-        @media only screen and (min-width:1200px){
+        gap: map-get($medidas , HeaderGap);
+
+        @media only screen and (min-width:1200px) {
             display: flex;
 
         }
     }
 
-    .logos img{
-        @media only screen and (min-width:1200px){
+    .logos img {
+        @media only screen and (min-width:1200px) {
             display: none;
         }
     }
 
-    .login::after{
-        @media only screen and (min-width:1200px){
+    .login::after {
+        @media only screen and (min-width:1200px) {
             content: "INICIAR SESION";
         }
     }
 
-    .login-registro{
-        @media only screen and (min-width:1200px){
+    .login-registro {
+        @media only screen and (min-width:1200px) {
             display: flex;
             align-items: center;
-            gap: map-get($medidas ,HeaderGap);
+            gap: map-get($medidas , HeaderGap);
         }
     }
 
-    .registro{
+    .registro {
         display: none;
-        @media only screen and (min-width:1200px){
+
+        @media only screen and (min-width:1200px) {
             display: flex;
             align-items: center;
             justify-content: center;
             border: solid black;
-            width: map-get($medidas ,registro-width );
-            height: map-get($medidas ,registro-height);
+            width: map-get($medidas , registro-width);
+            height: map-get($medidas , registro-height);
             order: 2;
         }
     }
 
-    .Header-Iconologin{
-        width: map-get($medidas ,widthIcono );
-        height: map-get($medidas ,heightIcono );
-        @media only screen and (min-width:1200px){
+    .Header-Iconologin {
+        width: map-get($medidas , widthIcono);
+        height: map-get($medidas , heightIcono);
+
+        @media only screen and (min-width:1200px) {
             display: none;
         }
     }
 
-    .Header-iconoHamburguesa{
-        width: map-get($medidas ,widthIcono );
-        height: map-get($medidas ,heightIcono );
-        @media only screen and (min-width:1200px){
+    .Header-iconoHamburguesa {
+        width: map-get($medidas , widthIcono);
+        height: map-get($medidas , heightIcono);
+
+        @media only screen and (min-width:1200px) {
             display: none;
         }
     }
 
-    input:checked~.Header-desplegable{
+    input:checked~.Header-desplegable {
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: map-get($medidas ,heightChecked);
-        padding: map-get($medidas ,paddingChecked);
-        background-color: map-get($Colores ,baseEcuatoguineano );
+        height: map-get($medidas , heightChecked);
+        padding: map-get($medidas , paddingChecked);
+        background-color: map-get($Colores , baseEcuatoguineano);
+        color: map-get($Colores , baseEcuatoguineano);
     }
-    a{
+
+    a {
         text-decoration: none;
+        color: map-get($Colores , baseEcuatoguineano);
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Proyecto</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <!--HEADER-->
     <header class="Header">
@@ -17,7 +19,8 @@
                 <!--Icono-login-->
                 <section class="login-registro">
                     <a href="registro.html" class="registro">Registro</a>
-                    <a class="login" href="login.html"><img class="Header-Iconologin" src="./assets/img/svg/Registro.svg"></img></a>
+                    <a class="login" href="login.html"><img class="Header-Iconologin"
+                            src="./assets/img/svg/Registro.svg"></img></a>
                 </section>
                 <!--Icono-despliegue-->
                 <input class="Header-despliega" type="checkbox" id="Header-boton">
@@ -37,5 +40,26 @@
         </section>
     </header>
     <!--Main-->
+    <main class="Main">
+        <!--Imagen de fondo-->
+        <section class="Main-fondo">
+            <picture>
+                <source srcset="
+                            assets/img/smartphone/Banner-fondo.webp 1x,
+                            assets/img/smartphone/Banner-fondo@2x.webp 2x,
+                            assets/img/smartphone/Banner-fondo@3x.webp 3x
+                            " media="(min-width:310px) and (orientation:portrait)">
+
+                <source srcset="
+                            assets/img/desktop/banner-fondo.webp 1x,
+                            assets/img/desktop/banner-fondo@2x.webp 2x,
+                            assets/img/desktop/banner-fondo@3x.webp 3x
+                            " media="(min-width:1000px)">
+                <img class="imagen-de-fondo
+                " src="" alt="1ª paractica">
+            </picture>
+        </section>
+    </main>
 </body>
+
 </html>
