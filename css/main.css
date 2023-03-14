@@ -651,6 +651,82 @@ Main .Eventos .Eventos-imagen2 {
   width: 360px;
   height: 149px;
 }
+Main .OtrosEventos {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+Main .OtrosEventos .OtrosEventos-imagen1 {
+  background-image: url("../assets/img/smartphone/miss@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 329px;
+  height: 182px;
+}
+Main .OtrosEventos .OtrosEventos-imagen2 {
+  background-image: url("../assets/img/smartphone/ALBA@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 329px;
+  height: 182px;
+}
+Main .OtrosEventos .OtrosEventos-imagen3 {
+  background-image: url("../assets/img/smartphone/buika2@3x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 329px;
+  height: 182px;
+}
+Main .OtrosEventos .OtrosEventos-linea1 {
+  height: 3px;
+  width: 45px;
+  background-color: black;
+  margin-bottom: 30px;
+  border: none;
+}
+Main .OtrosEventos .OtrosEventos-linea {
+  width: 45px;
+  height: 3px;
+  background-color: black;
+  margin-top: 30px;
+  border: none;
+}
+Main .OtrosEventos .OtrosEventos-texto {
+  width: 329px;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+Main .OtrosEventos .OtrosEventos-boton {
+  width: 188px;
+  height: 48px;
+  background-color: #43045D;
+  border: none;
+  border-radius: 10px;
+  color: black;
+}
+Main .OtrosEventos a {
+  text-decoration: none;
+  color: #C5D3E3;
+}
+Main .OtrosEventos .event {
+  margin-bottom: 0;
+}
 
 /* ********* */
 /* @FORMS */

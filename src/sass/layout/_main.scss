@@ -71,7 +71,7 @@ Main{
         border: solid gray;
         width: 114px;
         height: 44px;
-        border-radius: 10px;
+        border-radius: map-get($medidas, border-radius);
         margin: map-get($medidas, margin-boton);
         font-size: map-get($medidas, letra-boton);
         background-color: map-get($Colores, BannerFlojo);
@@ -143,6 +143,90 @@ Main{
             height: map-get($medidas, height-imagen);
         }
     
+    }
+
+    //OTROS EVENTOS
+    .OtrosEventos {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+        .OtrosEventos-otros{
+            margin: map-get($medidas, margin-Otros-eventos);
+        }
+
+        .OtrosEventos-imagen1 {
+            background-image: url("../assets/img/smartphone/miss@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidas, width-images);
+            height: map-get($medidas, height-images);
+        }
+
+        .OtrosEventos-imagen2 {
+            background-image: url("../assets/img/smartphone/ALBA@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidas, width-images);
+            height: map-get($medidas, height-images);
+        }
+
+        .OtrosEventos-imagen3 {
+            background-image: url("../assets/img/smartphone/buika2@3x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidas, width-images);
+            height: map-get($medidas, height-images);
+        }
+
+        .OtrosEventos-linea1{
+            height: map-get($medidas, heightLinea);
+            width: map-get($medidas, widthLinea);
+            background-color: map-get($Colores, LetraNegra);
+            margin-bottom: map-get($medidas, paddingLinea);
+            border: none;
+        }
+
+        .OtrosEventos-linea {
+            width: map-get($medidas, widthLinea);
+            height: map-get($medidas, heightLinea);
+            background-color: map-get($Colores, LetraNegra);
+            margin-top: map-get($medidas, paddingLinea);
+            border: none;
+        }
+
+        .OtrosEventos-texto{
+            width: map-get($medidas, width-images);
+            font-size: map-get($medidas, letraParafo);
+            padding-bottom: map-get($medidas, paddingLinea);
+        
+        }
+
+        .OtrosEventos-boton {
+            width: map-get($medidas, width-boton);
+            height: map-get($medidas, height-boton);
+            background-color:map-get($Colores, Boton);
+            border: none;
+            border-radius: map-get($medidas, border-radius);
+            color: map-get($Colores, LetraNegra);
+        }
+
+        a{
+            text-decoration: none;
+            color: map-get($Colores , LetraLogFontIcono );
+        }
+
+        .event{
+            margin-bottom: 0;
+        }
+
     }
 
 }
