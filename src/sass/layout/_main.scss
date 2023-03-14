@@ -97,5 +97,52 @@ Main{
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
     }
 
+    //EVENTOS
+    .Eventos {
+        background-color: map-get($Colores, baseEcuatoguineano);
+        width:map-get($medidas, width-Eventos);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .Eventos-event{
+            height: map-get($medidas, heightAcerca-de)
+        }
+    
+        .Eventos-linea {
+            height: map-get($medidas, heightLinea);
+            width: map-get($medidas, widthLinea);
+            background-color: map-get($Colores, LetraNegra);
+            margin-bottom: map-get($medidas, paddingLinea);
+            border: none;
+        }
+        
+    
+        .Eventos-imagen1 {
+            background-image: url("../assets/img/smartphone/mindje.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidas, width-foto);
+            height: map-get($medidas, height-imagen);
+        }
+
+        .eventos{
+            margin: map-get($medidas, margin-eventos);
+            text-decoration: none;
+            color: map-get($Colores , LetraNegra );
+        }
+    
+        .Eventos-imagen2 {
+            background-image: url("../assets/img/smartphone/Buika1.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: map-get($medidas, width-foto);
+            height: map-get($medidas, height-imagen);
+        }
+    
+    }
 
 }
