@@ -33,6 +33,69 @@ Main{
         background-position: center;
         height:  map-get($medidas, height-foto);
         width: map-get($medidas, width-foto);
+       
 
     }
+
+    //ACERCA-DE
+
+    .acerca{
+        background-color: map-get($Colores, AcercaDe);
+        padding: map-get($medidas, marginLados);
+       
+    }
+    .acerca-de{
+        margin-Top: 0;
+        text-align: center;
+    }
+
+    .Main-linea-acerca{
+        height: map-get($medidas, heightLinea);
+        width: map-get($medidas, widthLinea);
+        background-color: map-get($Colores, LetraNegra);
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .Main-superior{
+        height: map-get($medidas, height-superior);
+        width:  map-get($medidas, width-superior);
+        background: #A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+    }
+
+    .Main-boton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid gray;
+        width: 114px;
+        height: 44px;
+        border-radius: 10px;
+        margin: map-get($medidas, margin-boton);
+        font-size: map-get($medidas, letra-boton);
+        background-color: map-get($Colores, BannerFlojo);
+        color: map-get($Colores, LetraLogFontIcono);
+    }
+
+    .Main-imagenblack{
+        background: url("/assets/img/smartphone/Black@2x.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:  map-get($medidas, height-black);
+        width: map-get($medidas, width-foto);
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
+    .Main-inferior{
+        height: map-get($medidas, height-superior);
+        width:  map-get($medidas, width-superior);
+        background: #A80499;
+        background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+    }
+
+
 }

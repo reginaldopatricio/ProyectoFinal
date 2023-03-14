@@ -545,6 +545,69 @@ Main .Main-imagen {
   height: 327px;
   width: 360px;
 }
+Main .acerca {
+  background-color: #868686;
+  padding: 20px 0 20px;
+}
+Main .acerca-de {
+  margin-Top: 0;
+  text-align: center;
+}
+Main .Main-linea-acerca {
+  height: 3px;
+  width: 45px;
+  background-color: black;
+  border: none;
+  margin-bottom: 0;
+}
+Main .Main-superior {
+  height: 25px;
+  width: 100%;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+}
+Main .Main-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid gray;
+  width: 114px;
+  height: 44px;
+  border-radius: 10px;
+  margin: 0 30px 30px 0;
+  font-size: 14px;
+  background-color: #A80499;
+  color: #C5D3E3;
+}
+Main .Main-imagenblack {
+  background: url("/assets/img/smartphone/Black@2x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 237px;
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+Main .Main-inferior {
+  height: 25px;
+  width: 100%;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+}
 
 /* ********* */
 /* @FORMS */
