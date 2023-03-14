@@ -342,6 +342,155 @@ body {
 /* ********* */
 /* @HEADER */
 /* ********* */
+.Header-Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-Logo {
+    margin-left: 20px;
+  }
+}
+.Header-Navbar .Header-despliega {
+  display: none;
+}
+.Header-Navbar .Header-desplegable {
+  display: none;
+  list-style: none;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  width: 100vw;
+  height: 100vh;
+  gap: 40px;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-desplegable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 15px;
+    right: 30px;
+  }
+}
+.Header-Navbar .Logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .logos img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .login::after {
+    content: "INICIAR SESION";
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .login-registro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+}
+.Header-Navbar .registro {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .registro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: solid black;
+    width: 100px;
+    height: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.Header-Navbar .Header-Iconologin {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-Iconologin {
+    display: none;
+  }
+}
+.Header-Navbar .Header-iconoHamburguesa {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  .Header-Navbar .Header-iconoHamburguesa {
+    display: none;
+  }
+}
+.Header-Navbar input:checked ~ .Header-desplegable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 495px;
+  padding: 30px 0px 30px 0;
+  background-color: #D9D9D9;
+}
+.Header-Navbar a {
+  text-decoration: none;
+}
+
 /* ********* */
 /* @NAVIGATOR */
 /* ********* */
