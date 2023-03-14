@@ -514,16 +514,203 @@ Header a {
 /* ********* */
 /* @FOOTER */
 /* ********* */
+.lista {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #D9D9D9;
+  font-size: 10.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "alexandria";
+  padding: 5px;
+}
+.lista .list1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.lista .list2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.lista .list4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.lista .list7 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/span 3;
+  margin-bottom: 0;
+  font-family: "America";
+  color: #A83ADE;
+}
+.lista .list3 {
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+}
+.lista .list5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.lista .list6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/span 3;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+.lista .list8 {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/span 3;
+  font-family: "America";
+  color: #A83ADE;
+}
+
+.Footer-Comentario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-align: center;
+  margin-top: 0px;
+  background: #A80499;
+  background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+}
+
+.Footer-texto {
+  color: #C5D3E3;
+}
+
+.eventTime {
+  margin-bottom: 0;
+  color: #C5D3E3;
+  text-align: center;
+}
+
 /* ********* */
 /* @HMAIN */
 /* ********* */
+@media only screen and (min-width: 1200px) {
+  Main .DosCuadros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+Main .imagen-de-fondo {
+  width: 100%;
+}
 Main .Main-texto {
   background-color: #D9D9D9;
   margin-top: 13px;
   padding-top: 10px;
 }
+@media only screen and (min-width: 1200px) {
+  Main .Main-texto {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 Main .Main-talento {
   text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  Main .Main-talento {
+    font-size: 24px;
+  }
 }
 Main .Main-linea {
   height: 3px;
@@ -537,6 +724,12 @@ Main .Main-parrafo {
   font-size: 12px;
   margin-bottom: 0;
 }
+@media only screen and (min-width: 1200px) {
+  Main .Main-parrafo {
+    font-size: 16px;
+    width: 506px;
+  }
+}
 Main .Main-imagen {
   background: url("/assets/img/smartphone/Cesar@2x.webp");
   background-repeat: no-repeat;
@@ -544,6 +737,17 @@ Main .Main-imagen {
   background-position: center;
   height: 327px;
   width: 360px;
+}
+@media only screen and (min-width: 1200px) {
+  Main .Main-imagen {
+    width: 50%;
+    background: url("/assets/img/desktop/Cesar@2x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 300px;
+    margin-top: 13px;
+  }
 }
 Main .acerca {
   background-color: #868686;
@@ -565,6 +769,11 @@ Main .Main-superior {
   width: 100%;
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+}
+@media only screen and (min-width: 1200px) {
+  Main .Main-superior {
+    height: 60px;
+  }
 }
 Main .Main-boton {
   display: -webkit-box;
@@ -602,11 +811,26 @@ Main .Main-imagenblack {
       -ms-flex-align: end;
           align-items: end;
 }
+@media only screen and (min-width: 1200px) {
+  Main .Main-imagenblack {
+    background: url("/assets/img/desktop/black.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+  }
+}
 Main .Main-inferior {
   height: 25px;
   width: 100%;
   background: #A80499;
   background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+}
+@media only screen and (min-width: 1200px) {
+  Main .Main-inferior {
+    height: 60px;
+  }
 }
 Main .Eventos {
   background-color: #D9D9D9;
@@ -623,6 +847,16 @@ Main .Eventos {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+Main .Eventos .Tipo-evento {
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  Main .Eventos .Tipo-evento {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 Main .Eventos .Eventos-linea {
   height: 3px;

@@ -1,29 +1,61 @@
 /* ********* */
 /* @HMAIN */
 /* ********* */
-Main{
-    
-    .Main-texto{
+Main {
+
+    .DosCuadros {
+        @media only screen and (min-width:1200px) {
+            display: flex;
+            // width: map-get($medidas , widthgeneral);
+        }
+    }
+
+    .imagen-de-fondo {
+        width: 100%;
+    }
+
+    .Main-texto {
         background-color: map-get($Colores, baseEcuatoguineano);
         margin-top: map-get($medidas, margin-Main);
-        padding-top: map-get($medidas, padding-top)
+        padding-top: map-get($medidas, padding-top);
+
+        @media only screen and (min-width:1200px) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
-    .Main-talento{
+
+    .Main-talento {
         text-align: center;
+        @media only screen and (min-width:1200px){
+            font-size: 24px;
+        }
+        
+        
 
     }
-    .Main-linea{
+
+    .Main-linea {
         height: map-get($medidas, heightLinea);
         width: map-get($medidas, widthLinea);
         background-color: map-get($Colores, LetraNegra);
         border: none;
     }
 
-    .Main-parrafo{
+    .Main-parrafo {
         text-align: justify;
         padding: map-get($medidas, paddingParafo);
         font-size: map-get($medidas, letraParafo);
         margin-bottom: 0;
+
+        @media only screen and (min-width:1200px) {
+            font-size: 16px;
+            width: 506px;
+
+        }
     }
 
     .Main-imagen {
@@ -31,25 +63,36 @@ Main{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height:  map-get($medidas, height-foto);
+        height: map-get($medidas, height-foto);
         width: map-get($medidas, width-foto);
-       
+
+        @media only screen and (min-width:1200px) {
+            width: 50%;
+            background: url("/assets/img/desktop/Cesar@2x.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-top: 300px;
+            margin-top: 13px;
+        }
+
 
     }
 
     //ACERCA-DE
 
-    .acerca{
+    .acerca {
         background-color: map-get($Colores, AcercaDe);
         padding: map-get($medidas, marginLados);
-       
+
     }
-    .acerca-de{
+
+    .acerca-de {
         margin-Top: 0;
         text-align: center;
     }
 
-    .Main-linea-acerca{
+    .Main-linea-acerca {
         height: map-get($medidas, heightLinea);
         width: map-get($medidas, widthLinea);
         background-color: map-get($Colores, LetraNegra);
@@ -57,14 +100,20 @@ Main{
         margin-bottom: 0;
     }
 
-    .Main-superior{
+    .Main-superior {
         height: map-get($medidas, height-superior);
-        width:  map-get($medidas, width-superior);
+        width: map-get($medidas, width-superior);
         background: #A80499;
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+
+        @media only screen and (min-width:1200px) {
+
+            height: 60px;
+
+        }
     }
 
-    .Main-boton{
+    .Main-boton {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,38 +127,65 @@ Main{
         color: map-get($Colores, LetraLogFontIcono);
     }
 
-    .Main-imagenblack{
+    .Main-imagenblack {
         background: url("/assets/img/smartphone/Black@2x.webp");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height:  map-get($medidas, height-black);
+        height: map-get($medidas, height-black);
         width: map-get($medidas, width-foto);
         display: flex;
         justify-content: flex-end;
         align-items: end;
+
+        @media only screen and (min-width:1200px) {
+            background: url("/assets/img/desktop/black.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 700px;
+
+        }
+
     }
 
-    .Main-inferior{
+    .Main-inferior {
         height: map-get($medidas, height-superior);
-        width:  map-get($medidas, width-superior);
+        width: map-get($medidas, width-superior);
         background: #A80499;
         background: linear-gradient(119.29deg, #A80499 0%, #010536 100%);
+
+        @media only screen and (min-width:1200px) {
+
+            height: 60px;
+
+        }
     }
 
     //EVENTOS
     .Eventos {
         background-color: map-get($Colores, baseEcuatoguineano);
-        width:map-get($medidas, width-Eventos);
+        width: map-get($medidas, width-Eventos);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        .Eventos-event{
+        .Tipo-evento{
+            text-align: center;
+            @media only screen and (min-width:1200px) {
+
+                display: flex;
+                
+    
+            }
+        }
+
+        .Eventos-event {
             height: map-get($medidas, heightAcerca-de)
         }
-    
+
         .Eventos-linea {
             height: map-get($medidas, heightLinea);
             width: map-get($medidas, widthLinea);
@@ -117,8 +193,8 @@ Main{
             margin-bottom: map-get($medidas, paddingLinea);
             border: none;
         }
-        
-    
+
+
         .Eventos-imagen1 {
             background-image: url("../assets/img/smartphone/mindje.webp");
             background-repeat: no-repeat;
@@ -128,12 +204,12 @@ Main{
             height: map-get($medidas, height-imagen);
         }
 
-        .eventos{
+        .eventos {
             margin: map-get($medidas, margin-eventos);
             text-decoration: none;
-            color: map-get($Colores , LetraNegra );
+            color: map-get($Colores , LetraNegra);
         }
-    
+
         .Eventos-imagen2 {
             background-image: url("../assets/img/smartphone/Buika1.webp");
             background-repeat: no-repeat;
@@ -142,7 +218,7 @@ Main{
             width: map-get($medidas, width-foto);
             height: map-get($medidas, height-imagen);
         }
-    
+
     }
 
     //OTROS EVENTOS
@@ -155,7 +231,7 @@ Main{
         text-align: center;
         width: 100%;
 
-        .OtrosEventos-otros{
+        .OtrosEventos-otros {
             margin: map-get($medidas, margin-Otros-eventos);
         }
 
@@ -186,7 +262,7 @@ Main{
             height: map-get($medidas, height-images);
         }
 
-        .OtrosEventos-linea1{
+        .OtrosEventos-linea1 {
             height: map-get($medidas, heightLinea);
             width: map-get($medidas, widthLinea);
             background-color: map-get($Colores, LetraNegra);
@@ -202,28 +278,28 @@ Main{
             border: none;
         }
 
-        .OtrosEventos-texto{
+        .OtrosEventos-texto {
             width: map-get($medidas, width-images);
             font-size: map-get($medidas, letraParafo);
             padding-bottom: map-get($medidas, paddingLinea);
-        
+
         }
 
         .OtrosEventos-boton {
             width: map-get($medidas, width-boton);
             height: map-get($medidas, height-boton);
-            background-color:map-get($Colores, Boton);
+            background-color: map-get($Colores, Boton);
             border: none;
             border-radius: map-get($medidas, border-radius);
             color: map-get($Colores, LetraNegra);
         }
 
-        a{
+        a {
             text-decoration: none;
-            color: map-get($Colores , LetraLogFontIcono );
+            color: map-get($Colores , LetraLogFontIcono);
         }
 
-        .event{
+        .event {
             margin-bottom: 0;
         }
 
